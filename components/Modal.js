@@ -7,7 +7,7 @@ export default function Modal({isVisible, OnClose, children}) {
   return (
    
     
-      <div id="wrapper" onClick={handleClose} className="inset-0 fixed bg-black opacity-90 backdrop-blur flex justify-center items-center">
+      <div id="wrapper" onClick={handleClose} className="inset-0 fixed bg-black opacity-95 backdrop-blur flex justify-center items-center">
         <div className="w-[50%] flex flex-col">
           <button className="place-self-end">
             <FiX onClick={()=>OnClose()}className="text-gray-100 text-3xl cursor-pointer" />

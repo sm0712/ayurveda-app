@@ -13,9 +13,9 @@ export default function Home() {
       <section>
         <Navbar />
       </section>
-      <AppBgImg />
-      <div className="grid grid-cols-1 items-center ">
-        <h1 className="font-bold text-5xl justify-self-center font-poppins text-[#618264] my-12 p-5 text-center w-[70%]">
+      
+      <div style={{ backgroundImage: `url("/bgimg.jpg")` }} className="bg-cover bg-center h-screen w-full grid grid-cols-1 items-center"> 
+        <h1 className="font-bold text-5xl justify-self-center font-poppins text-[#618264] my-5 text-center w-[70%]">
           Ayurveda: A Brief Introduction And Guide
         </h1>
 
@@ -32,8 +32,11 @@ export default function Home() {
           Homeopathy and Polarity Therapy.
         </p>
 
-        <button onClick={()=>setShowModal(true)}className=" m-10  justify-self-center font-bold font-poppins text-xl text-white md:px-5 py-5 w-[15%] bg-[#304D30] rounded-full hover:bg-[#163020]">
+        <button onClick={()=>setShowModal(true)}className="justify-self-center font-bold font-poppins text-xl text-white md:px-5 py-5 w-[15%] bg-[#304D30] rounded-full hover:bg-[#163020]">
           REQUEST SAMPLE
+        </button>
+        <button onClick={()=>setShowModal(true)}className="justify-self-center font-bold font-poppins text-xl text-white md:px-5 py-5 w-[15%] bg-[#304D30] rounded-full hover:bg-[#163020]">
+          GIVE US FEEDBACK 
         </button>
       </div>
       <Modal isVisible={showModal} OnClose={()=>setShowModal(false)}>
